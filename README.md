@@ -1,6 +1,6 @@
 # svelte-portfolio
 
-This is a personal **Svelte Projects Portfolio** developed with [Svelte](https://svelte.dev) starter template. It lives on Netlify.
+This is a personal **Svelte Projects Portfolio** developed with [Svelte](https://svelte.dev) starter template. It lives on https://svelte-portfolio.netlify.com/
 
 ## Get started
 
