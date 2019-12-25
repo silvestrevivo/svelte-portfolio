@@ -1,15 +1,21 @@
 <script>
+  import { onMount } from "svelte";
   import projectsData from "./projects/projects";
   import Project from "./Project.svelte";
+  // variables
+  let projects = [];
+
+  // lifecycle
+  onMount(() => {
+    setTimeout(() => {
+      projects = projectsData;
+    }, 10);
+  });
 </script>
 
 <style>
   .project-list {
     width: 90%;
-  }
-  .loading {
-    color: azure;
-    font-size: 25px;
   }
 
   @media only screen and (min-width: 600px) {
@@ -20,11 +26,9 @@
 </style>
 
 <div class="project-list">
-  {#each projectsData as project (project.id)}
+  {#each projects as project, index (project.id)}
     <ul>
-      <Project {...project} />
+      <Project {...project} {index} />
     </ul>
-  {:else}
-    <p class="loading">loading...</p>
   {/each}
 </div>
