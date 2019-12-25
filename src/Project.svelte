@@ -1,6 +1,6 @@
 <script>
-  export let name;
-  export let url;
+  import { fly } from "svelte/transition";
+  export let name, url, index;
 </script>
 
 <style>
@@ -20,6 +20,6 @@
   }
 </style>
 
-<li>
+<li transition:fly={{ x: 500, delay: (index + 1) * 300 }}>
   <a href={url} target="_blank">{name}</a>
 </li>

@@ -1,3 +1,17 @@
+<script>
+  import { fade } from "svelte/transition";
+  import { onMount } from "svelte";
+  //variables
+  let visible = false;
+
+  // lifecycle
+  onMount(() => {
+    setTimeout(() => {
+      visible = true;
+    }, 10);
+  });
+</script>
+
 <style>
   img {
     width: 90%;
@@ -22,4 +36,9 @@
   }
 </style>
 
-<img src="./assets/SvelteLogo.png" alt="SvelteLogo" />
+{#if visible}
+  <img
+    src="./assets/SvelteLogo.png"
+    alt="SvelteLogo"
+    transition:fade={{ duration: 1000 }} />
+{/if}

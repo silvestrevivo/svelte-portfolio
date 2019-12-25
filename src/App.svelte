@@ -5,33 +5,31 @@
 
 <style>
   main {
-    /* border: 2px solid green; */
-    height: 100%;
-    display: flex;
-    flex-direction: column-reverse;
     background-color: #fa3b00;
+    height: 100vh;
   }
 
   .container {
-    /* border: 1px solid blue; */
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 25px 0;
   }
 
   @media only screen and (min-width: 1000px) {
     main {
       flex-direction: row;
+      display: flex;
     }
   }
 </style>
 
 <main>
   <div class="container">
-    <ProjectsList />
+    <Logo />
   </div>
   <div class="container">
-    <Logo />
+    <ProjectsList />
   </div>
 </main>
