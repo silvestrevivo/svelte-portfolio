@@ -1,7 +1,7 @@
 export default [
   {
     id: Math.random() * Date.now(),
-    name: "meetups",
+    name: "meetups app",
     url: 'https://svelte-meetups.netlify.com/'
   },
   {
@@ -11,12 +11,12 @@ export default [
   },
   {
     id: Math.random() * Date.now(),
-    name: "third project",
-    url: 'https://sveltejs-budget-calculator.netlify.com/'
+    name: "Todo app",
+    url: 'https://sveltejs-todo-app.netlify.com/'
   },
   {
     id: Math.random() * Date.now(),
-    name: "fourth project",
-    url: 'https://sveltejs-budget-calculator.netlify.com/'
+    name: "testing-library meetup",
+    url: 'https://github.com/silvestrevivo/svelte-testing-library-meetup'
   }
 ];
