@@ -1,11 +1,11 @@
 <script>
   import Logo from "./Logo.svelte";
+  import Disclaimer from "./Disclaimer.svelte";
   import ProjectsList from "./ProjectsList.svelte";
 </script>
 
 <style>
   main {
-    background-color: #fa3b00;
     height: 100vh;
   }
 
@@ -32,4 +32,5 @@
   <div class="container">
     <ProjectsList />
   </div>
+  <Disclaimer />
 </main>
