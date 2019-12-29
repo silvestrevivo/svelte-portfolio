@@ -4,6 +4,16 @@
   import ProjectsList from "./ProjectsList.svelte";
 </script>
 
+<main>
+  <div class="container">
+    <Logo />
+  </div>
+  <div class="container">
+    <ProjectsList />
+  </div>
+  <Disclaimer />
+</main>
+
 <style>
   main {
     height: 100vh;
@@ -24,13 +34,3 @@
     }
   }
 </style>
-
-<main>
-  <div class="container">
-    <Logo />
-  </div>
-  <div class="container">
-    <ProjectsList />
-  </div>
-  <Disclaimer />
-</main>

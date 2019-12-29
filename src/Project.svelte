@@ -3,6 +3,10 @@
   export let name, url, index;
 </script>
 
+<li transition:fly={{ x: 500, delay: (index + 1) * 300 }}>
+  <a href={url} target="_blank">{name}</a>
+</li>
+
 <style>
   li {
     list-style-type: none;
@@ -19,7 +23,3 @@
     }
   }
 </style>
-
-<li transition:fly={{ x: 500, delay: (index + 1) * 300 }}>
-  <a href={url} target="_blank">{name}</a>
-</li>
