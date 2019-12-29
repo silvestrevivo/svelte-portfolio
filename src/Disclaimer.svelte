@@ -5,15 +5,11 @@
   let visible = false;
 
   // lifecycle
-  onMount(() => {
-    setTimeout(() => {
-      visible = true;
-    }, 200);
-  });
+  onMount(() => (visible = true));
 </script>
 
 {#if visible}
-  <footer transition:fly={{ y: 100, duration: 2000 }}>
+  <footer transition:fly={{ y: 100, duration: 2000, delay: 500 }}>
     <a href="https://github.com/silvestrevivo" target="_blank">
       <i class="fab fa-github" />
     </a>
