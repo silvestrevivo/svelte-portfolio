@@ -6,11 +6,7 @@
   let projects = [];
 
   // lifecycle
-  onMount(() => {
-    setTimeout(() => {
-      projects = projectsData;
-    }, 10);
-  });
+  onMount(() => (projects = projectsData));
 </script>
 
 <div class="project-list">

@@ -5,18 +5,14 @@
   let visible = false;
 
   // lifecycle
-  onMount(() => {
-    setTimeout(() => {
-      visible = true;
-    }, 10);
-  });
+  onMount(() => (visible = true));
 </script>
 
 {#if visible}
   <img
     src="./assets/SvelteLogo.png"
     alt="SvelteLogo"
-    transition:fade={{ duration: 1000 }} />
+    transition:fade={{ duration: 2000 }} />
 {/if}
 
 <style>
