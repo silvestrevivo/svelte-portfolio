@@ -12,6 +12,13 @@
   });
 </script>
 
+{#if visible}
+  <img
+    src="./assets/SvelteLogo.png"
+    alt="SvelteLogo"
+    transition:fade={{ duration: 1000 }} />
+{/if}
+
 <style>
   img {
     width: 90%;
@@ -35,10 +42,3 @@
     }
   }
 </style>
-
-{#if visible}
-  <img
-    src="./assets/SvelteLogo.png"
-    alt="SvelteLogo"
-    transition:fade={{ duration: 1000 }} />
-{/if}

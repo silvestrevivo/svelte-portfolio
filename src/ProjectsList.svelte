@@ -13,6 +13,14 @@
   });
 </script>
 
+<div class="project-list">
+  {#each projects as project, index (project.id)}
+    <ul>
+      <Project {...project} {index} />
+    </ul>
+  {/each}
+</div>
+
 <style>
   .project-list {
     width: 90%;
@@ -24,11 +32,3 @@
     }
   }
 </style>
-
-<div class="project-list">
-  {#each projects as project, index (project.id)}
-    <ul>
-      <Project {...project} {index} />
-    </ul>
-  {/each}
-</div>
