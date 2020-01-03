@@ -1,5 +1,5 @@
 <script>
-  import { fade } from "svelte/transition";
+  import { blur } from "svelte/transition";
   import { onMount } from "svelte";
   //variables
   let visible = false;
@@ -12,7 +12,7 @@
   <img
     src="./assets/SvelteLogo.png"
     alt="SvelteLogo"
-    transition:fade={{ duration: 2000 }} />
+    transition:blur={{ duration: 2000, amount: 20 }} />
 {/if}
 
 <style>
