@@ -1,19 +1,11 @@
 <script>
   import { blur } from "svelte/transition";
-  import { onMount } from "svelte";
-  //variables
-  let visible = false;
-
-  // lifecycle
-  onMount(() => (visible = true));
 </script>
 
-{#if visible}
-  <img
-    src="./assets/SvelteLogo.png"
-    alt="SvelteLogo"
-    transition:blur={{ duration: 2000, amount: 20 }} />
-{/if}
+<img
+  src="./assets/SvelteLogo.png"
+  alt="SvelteLogo"
+  transition:blur={{ duration: 2000, amount: 20 }} />
 
 <style>
   img {

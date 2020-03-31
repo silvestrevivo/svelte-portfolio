@@ -1,31 +1,23 @@
 <script>
   import { fly } from "svelte/transition";
-  import { onMount } from "svelte";
-  //variables
-  let visible = false;
-
-  // lifecycle
-  onMount(() => (visible = true));
 </script>
 
-{#if visible}
-  <footer transition:fly={{ y: 100, duration: 2000, delay: 500 }}>
-    <a href="https://github.com/silvestrevivo" target="_blank">
-      <i class="fab fa-github" />
-    </a>
-    <a href="https://twitter.com/silvestrevivo" target="_blank">
-      <i class="fab fa-twitter" />
-    </a>
-    <a
-      href="https://www.linkedin.com/in/silvestre-vivo-1a6843bb/"
-      target="_blank">
-      <i class="fab fa-linkedin" />
-    </a>
-    <a href="https://www.reddit.com/user/silvestrevivo/" target="_blank">
-      <i class="fab fa-reddit" />
-    </a>
-  </footer>
-{/if}
+<footer transition:fly={{ y: 100, duration: 2000, delay: 500 }}>
+  <a href="https://github.com/silvestrevivo" target="_blank">
+    <i class="fab fa-github" />
+  </a>
+  <a href="https://twitter.com/silvestrevivo" target="_blank">
+    <i class="fab fa-twitter" />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/silvestre-vivo-1a6843bb/"
+    target="_blank">
+    <i class="fab fa-linkedin" />
+  </a>
+  <a href="https://www.reddit.com/user/silvestrevivo/" target="_blank">
+    <i class="fab fa-reddit" />
+  </a>
+</footer>
 
 <style>
   footer {
