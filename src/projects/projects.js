@@ -2,17 +2,17 @@ export default [
   {
     id: Math.random() * Date.now(),
     name: "meetups app",
-    url: 'https://svelte-meetups.netlify.com/'
+    url: 'https://svelte-meetups.netlify.app/'
   },
   {
     id: Math.random() * Date.now(),
     name: "budget calculator",
-    url: 'https://sveltejs-budget-calculator.netlify.com/'
+    url: 'https://sveltejs-budget-calculator.netlify.app/'
   },
   {
     id: Math.random() * Date.now(),
     name: "Todo app",
-    url: 'https://sveltejs-todo-app.netlify.com/'
+    url: 'https://sveltejs-todo-app.netlify.app/'
   },
   {
     id: Math.random() * Date.now(),
