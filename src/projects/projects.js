@@ -23,5 +23,10 @@ export default [
     id: Math.random() * Date.now(),
     name: "npm svelte-marquee",
     url: 'https://www.npmjs.com/package/svelte-marquee'
+  },
+  {
+    id: Math.random() * Date.now(),
+    name: "svelte-strapi-ecommerce",
+    url: 'https://svelte-ecommerce.netlify.app/'
   }
 ];
