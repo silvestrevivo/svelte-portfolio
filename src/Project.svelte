@@ -4,7 +4,7 @@
 </script>
 
 <li transition:fly={{ x: 500, delay: (index + 1) * 300 }}>
-  <a href={url} target="_blank">{name}</a>
+  <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
 </li>
 
 <style>

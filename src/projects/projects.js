@@ -28,5 +28,10 @@ export default [
     id: Math.random() * Date.now(),
     name: "svelte-strapi-ecommerce",
     url: 'https://svelte-ecommerce.netlify.app/'
+  },
+  {
+    id: Math.random() * Date.now(),
+    name: "benditaburger e-commerce",
+    url: 'https://benditaburger.es/'
   }
 ];
